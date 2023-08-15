@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 01, aula 02</title>
+</head>
+    <style>
+        body{
+            font-family: arial, helvetica sans-serif;
+        }
+        table{
+            width: 500px;
+        }
+        td, th{
+            border: 1px solid black
+            padding 10px;
+        }
+        caption{
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot{
+            background-color: #383838;
+            color: white;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+<body>
+    <h1>ESTRUTURAS DE TABELAS GRANDES</h1>
+    <table>
+        <caption>POPULAÇÃO DOS ESTADOS</caption>
+
+        <thead>
+            <tr>
+                <th colspan="2">SUDESTE</th>
+            </tr>
+
+            <tr>
+                <th>Estado</th>
+                <th style="width: 50px;">Quantidade</th>
+            </tr>
+
+        <thead>
+
+        <tbody>
+        
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 milhões</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 milhões</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num"> 10 milhões</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 milhões</td>
+            </tr>
+        </tbody>
+
+        </thead>
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>84 milhões</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
