@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 03, aula 02</title>
+     <style>
+        body{
+            font-family: arial, helvetica sans-serif;
+            border-collapse: collapse;
+        }
+        table{
+            width: 500px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption{
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot{
+            background-color: lightgray;
+            color: black;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: black;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: black;
+        }
+        td.num {
+            text-align: right;
+        } 
+     </style>
+</head>
+<body>
+    <h1>MESCLAGEM DE CÉLULAS</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>A</th>
+                <th colspan="2">B</th>
+            </tr>
+                <th rowspan="3">C</th>
+                <th>D</th>
+                <th rowspan="2">E</th>
+            <tr>
+                <th>F</th>
+            </tr>
+
+            <tr>
+                <th colspan="2">G</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
